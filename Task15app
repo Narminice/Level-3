@@ -1,0 +1,18 @@
+15. İstifadəçidən N ədəd alın və onların cəmini tapın.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N, cem = 0, eded;
+    cout << "Neçə ədəd daxil edəcəksiniz: ";
+    cin >> N;
+
+    for (int i = 1; i <= N; i++) {
+        cout << i << ". ədədi daxil edin: ";
+        cin >> eded;
+        cem += eded;
+    }
+
+    cout << "Cəm: " << cem;
+    return 0;
+}
