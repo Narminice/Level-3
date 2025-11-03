@@ -1,0 +1,24 @@
+13. Rəqəmləri tərsinə çevirən və palindrom olub-olmadığını yoxlayan proqram.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, original, ters = 0;
+    cout << "Ədəd daxil edin: ";
+    cin >> n;
+    original = n;
+
+    while (n != 0) {
+        ters = ters * 10 + n % 10;
+        n /= 10;
+    }
+
+    cout << "Tərsi: " << ters << endl;
+
+    if (original == ters)
+        cout << "Palindromdur.";
+    else
+        cout << "Palindrom deyil.";
+
+    return 0;
+}
