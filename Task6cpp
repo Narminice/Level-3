@@ -1,0 +1,15 @@
+6. 1-dən istifadəçi daxil etdiyi ədədə qədər bütün ədədləri toplayın.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, cem = 0;
+    cout << "Ədəd daxil edin: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++)
+        cem += i;
+
+    cout << "Cəm: " << cem;
+    return 0;
+}
