@@ -1,0 +1,16 @@
+4. İstifadəçidən bir ədəd alın və onun faktorialını tapın.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    long long fakt = 1;
+    cout << "Ədəd daxil edin: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++)
+        fakt *= i;
+
+    cout << n << "! = " << fakt;
+    return 0;
+}
