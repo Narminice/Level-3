@@ -1,0 +1,17 @@
+7. while dövrü ilə istifadəçidən 0 daxil edənə qədər ədədləri toplayın.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, cem = 0;
+    cout << "Ədədləri daxil edin (bitirmək üçün 0 yazın): ";
+    cin >> n;
+
+    while (n != 0) {
+        cem += n;
+        cin >> n;
+    }
+
+    cout << "Cəm: " << cem;
+    return 0;
+}
