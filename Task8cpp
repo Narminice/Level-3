@@ -1,0 +1,17 @@
+8. Ədədin tərsini tapın (məsələn, 123 → 321).
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, ters = 0;
+    cout << "Ədəd daxil edin: ";
+    cin >> n;
+
+    while (n != 0) {
+        ters = ters * 10 + n % 10;
+        n /= 10;
+    }
+
+    cout << "Tərsi: " << ters;
+    return 0;
+}
